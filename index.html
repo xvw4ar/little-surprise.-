@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b22">
+  <title>A little universe for you</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="stars"></div><div class="stars stars-two"></div>
+    <div class="moon"></div><div class="horizon-glow"></div>
+    <div class="city">
+      <i style="--h:36%;--x:1%;--w:8%"></i><i style="--h:58%;--x:8%;--w:7%"></i>
+      <i style="--h:43%;--x:15%;--w:9%"></i><i style="--h:72%;--x:24%;--w:8%"></i>
+      <i style="--h:51%;--x:33%;--w:7%"></i><i style="--h:66%;--x:41%;--w:9%"></i>
+      <i style="--h:47%;--x:51%;--w:8%"></i><i style="--h:76%;--x:60%;--w:9%"></i>
+      <i style="--h:55%;--x:70%;--w:8%"></i><i style="--h:69%;--x:79%;--w:8%"></i>
+      <i style="--h:45%;--x:88%;--w:7%"></i><i style="--h:61%;--x:94%;--w:8%"></i>
+    </div>
+  </div>
+
+  <main class="shell">
+    <div class="topline"><span class="signal"></span> PRIVATE TRANSMISSION <span class="topline-right">23 NOV · FOR YOU</span></div>
+
+    <section class="screen active" id="welcome">
+      <div class="eyebrow">A MESSAGE FROM MY LITTLE UNIVERSE</div>
+      <div class="hero-art">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="planet"><span></span></div>
+        <div class="spark spark-a">✦</div><div class="spark spark-b">✧</div><div class="spark spark-c">✦</div>
+      </div>
+      <h1>Let's go<br><em>somewhere</em><br>beautiful.</h1>
+      <p class="intro-copy">I made a little something for you.<br>Before you open it, there's a song.</p>
+
+      <div class="player-card">
+        <div class="album-art"><span class="album-moon"></span><b>01</b></div>
+        <div class="track-info">
+          <span class="track-label">NOW PLAYING</span>
+          <strong>Can't Help Falling in Love</strong>
+          <small>Elvis Presley · a song for you</small>
+        </div>
+        <span class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <audio id="song" preload="metadata" src="song.m4a"></audio>
+        <div class="audio-controls">
+          <button class="play-button" id="playBtn" aria-label="Play song"><span class="play-icon">▶</span></button>
+          <div class="progress-wrap"><div class="progress-track"><div id="progress"></div></div><div class="time-row"><span id="currentTime">0:00</span><span id="duration">0:00</span></div></div>
+        </div>
+        <p class="player-caption">Take my hand, let's go to the moon together.</p>
+      </div>
+
+      <button class="continue-button" id="continueBtn">OPEN YOUR LETTER <span>↗</span></button>
+      <p class="hint">PRESS PLAY FIRST · KEEP THE MUSIC WITH YOU</p>
+    </section>
+
+    <section class="screen letter-screen" id="letter">
+      <div class="letter-head">
+        <span class="eyebrow">TRANSMISSION RECEIVED · 23.11</span>
+        <div class="letter-symbol">✧</div>
+        <h2>To my favorite<br><em>person.</em></h2>
+        <p class="letter-sub">A little note, sent across the universe.</p>
+      </div>
+      <article class="letter-card">
+        <p>To my favorite person,</p>
+        <p>On your birthday, I wish you years filled with happiness, surrounded by the people you love, a heart that never knows sadness, and days that are just as beautiful as your soul.</p>
+        <p>I hope I get to see you achieve all your dreams and reach the place you truly deserve. I'll always cheer you on, support you and your beautiful ideas, and I'll always be proud of every effort you make.</p>
+        <p>You're truly such a wonderful and special person to me. You have such a unique personality, and having you in my life gives me such a beautiful feeling.</p>
+        <p>I wanted to make you something small that would make you smile, just like you always manage to make me smile with all the little things and tiny details you do for me.</p>
+        <p>And finally, I want to tell you once again: happy birthday! I hope you enjoy your day and make beautiful memories, because today isn't just an ordinary day...</p>
+        <p>Today is special because it's the day the most special person in my life was born. 🖐🏻💕</p>
+        <div class="signoff">With all my love <span>♡</span></div>
+      </article>
+      <div class="letter-footer"><span>END OF TRANSMISSION</span><span>✦ STILL UNDER THE SAME SKY ✦</span></div>
+    </section>
+    <footer><span>MADE OF STARDUST</span><span>✦</span><span>JUST FOR YOU</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
